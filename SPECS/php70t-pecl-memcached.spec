@@ -4,11 +4,12 @@
 %global real_name php-pecl-memcached
 %global basever 2
 %global php_base php70t
+%global date 20151222
 
 Summary:      Extension to work with the Memcached caching daemon
 Name:         %{php_base}-pecl-memcached
 Version:      2.2.0
-Release:      1.vortex%{?dist}
+Release:      2.%{?date}.vortex%{?dist}
 License:      PHP
 Group:        Development/Languages
 URL:          http://pecl.php.net/package/%{pecl_name}
@@ -83,6 +84,9 @@ EOF
 
 
 %changelog
+* Tue Dec 22 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 2.2.0-2.20151222.vortex
+- Git source.
+
 * Tue May 26 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 2.2.0-1.vortex
 - Update buildreqs to fix el7.
 
